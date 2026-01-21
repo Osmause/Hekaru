@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*CREATE VARIABLE*/
+:root {
+    --softLight: #E2E8F0;
+    --whiteDiamond: #FFFFFF;
+    --whiteGray: #9CA3AF;
+    --oceanDepth: #191E25;
+    --abyssalBlack: #06070D;
+    --grayDark: #272E40;
+    --deepNavy: #1A2140;
+    --softCyan: #22D3EE;
+    --steelBlue: #3A4F9A;
+    --nightCity: #33427F;
+    --clearSky: #3788F7;
+    --nightShadow: #0A0F19;
+    --steamButton: #1A9FFF;
+    --playstationButton: #0070F1;
+    --coralOrange: #FE6836;
+    --coralSanguine: #F04640;
+    --redSky: #F04643;
+    --xboxButton: #007738;
+    --mintGreen: #00E59B;
+    --nintendoButton: #E60012;
+    --disErr: #CF0112;
+    --hotPink: #EC4899;
+    --raspberry: #C21D6F;
+    --lila: #B56AFF;
+    --lavenderPurple: #C084FC;
+    --violette: #841EE9;
+    --abyssalNight: linear-gradient(to bottom, var(--nightCity), var(--nightShadow));
+    --abyssalSteam: linear-gradient(to bottom, var(--steamButton), var(--nightShadow));
+    --abyssalPlayStation: linear-gradient(to bottom, var(--playstationButton), var(--nightShadow));
+    --abyssalxbox: linear-gradient(to bottom, var(--xboxButton), var(--nightShadow));
+    --abyssalnintendo: linear-gradient(to bottom, var(--nintendoButton), var(--nightShadow));
+    --skyblue: linear-gradient(-60deg, var(--softCyan), var(--clearSky));
+    --flowerPurple: linear-gradient(-60deg, var(--lavenderPurple), var(--violette));
+    --lovePink: linear-gradient(-60deg, var(--hotPink), var(--raspberry));
+    --sunset: linear-gradient(-60deg, var(--coralOrange), var(--coralSanguine));
+    --h1-phone-size: 1.125rem;
+    --h2-phone-size: 0.875rem;
+    --h3-phone-size: 0.75rem;
+    --h1-pc-size: 1.375rem;
+    --h2-pc-size: 1.125rem;
+    --h3-pc-size: 0.875rem;
+}
+body{
+      min-height: 100vh;
+}
+/* COLOR TEXT AND BACKGROUND */
+
+.text-color-softLight{
+    color: var(--softLight);
+}
+
+.text-color-whiteDiamond{
+    color: var(--whiteDiamond);
+}
+
+.text-color-whiteGray{
+    color: var(--whiteGray);
+}
+
+.text-color-abyssalBlack{
+    color: var(--abyssalBlack);
+}
+
+.text-color-softCyan{
+    color: var(--softCyan);
+}
+
+.text-color-lila{
+    color: var(--lila);
+}
+
+.text-color-hotPink{
+    color: var(--hotPink);
+}
+
+.text-color-coralSanguine{
+    color: var(--coralSanguine);
+}
+
+.text-color-valid{
+    color: var(--mintGreen);
+}
+
+.text-color-disErr{
+    color: var(--disErr);
+}
+
+.bg-color-deepNavy{
+    background-color: var(--deepNavy);
+}
+
+.bg-color-skyBlue{
+    background: var(--skyblue);
+}
+
+.bg-color-flowerpurple{
+    background: var(--flowerPurple);
+}
+
+.bg-color-lovePink{
+    background: var(--lovePink);
+}
+
+.bg-color-sunset{
+    background: var(--sunset);
+}
+
+/*RADIUS COMPONENT*/
+
+.radius-component{
+    border-radius: 10px;
+}
+
+.radius-component-color{
+    border: 2px solid var(--grayDark);
+    border-radius: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: var(--softCyan);
+}
+
+/*RESPONSIVE*/
+
+.text-h1-media {
+    font-size: var(--h1-phone-size);
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+.text-h2-media {
+    font-size: var(--h2-phone-size);
+    font-family: 'roboto';
+}
+
+.text-h3-media {
+    font-size: var(--h3-phone-size);
+    font-family: 'roboto';
+}
+
+@media only screen and (min-width: 770px) {
+
+    .text-h1-media{
+        font-size: var(--h1-pc-size);
+    }
+
+    .text-h2-media{
+        font-size: var(--h2-pc-size);
+    }
+
+    .text-h3-media{
+        font-size: var(--h3-pc-size);
+    }
+}
