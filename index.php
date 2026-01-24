@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <?php include('./includes/header.html'); ?>
 </body>
+<script type="module" src="/assets/js/main.js"></script>
 </html>
