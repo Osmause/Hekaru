@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url(/assets/css/includes/header.css);
+@import url(/assets/css/includes/footer.css);
 
 /*CREATE VARIABLE*/
 :root {
@@ -67,6 +68,7 @@ li {
 
 a {
     color: var(--softCyan);
+    text-decoration: none;
 }
 
 button {
@@ -162,7 +164,7 @@ button {
 
 /* PADDING */
 
-.padding-nav {
+.padding-5 {
     padding: 5%;
 }
 
@@ -187,8 +189,16 @@ button {
     display: flex;
 }
 
+.grid{
+    display: grid;
+}
+
 .gap-5{
-    gap: 5%;
+    gap: 0.3125em;
+}
+
+.column-gap-5{
+    grid-gap: 5%;
 }
 
 .ai-center {
@@ -200,6 +210,11 @@ button {
 .ji-center{
     justify-items: center;
 }
+
+.column{
+    flex-direction: column;
+}
+
 .no-gap {
     gap: 0;
 }
@@ -241,8 +256,17 @@ button {
 .gap-anim{
     transition: gap 1500ms ease-in-out;
 }
+.width-100{
+    width: 100%;
+}
 .no-width {
     width: 0;
+}
+.separator{
+    width: 100%;
+    padding: 0.1%;
+    border-radius: 10px;
+    background-color: var(--grayDark)
 }
 /*Z-INDEX */
 .z-index-0{
