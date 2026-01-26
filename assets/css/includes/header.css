@@ -1,10 +1,11 @@
 header {
+    position: fixed;
     width: 100%;
 }
 
 /* .logo-navigation {
     display: block;
-     même largeur que l'image 
+    même largeur que l'image 
     width: 20%;
 }
 
@@ -25,7 +26,6 @@ header {
     align-items: center;
     justify-content: center;
     outline: none;
-    transition: 400ms ease-in-out;
 }
 
 .search-wrapper input {
@@ -72,13 +72,14 @@ header {
     gap: 1%;
 }
 
-.menu-navigation-user {
-    display: flex;
-    gap: 5%;
-}
+
 
 .shop-cart,
 .menu-burger {
     width: 24px;
     height: 24px;
+}
+
+.menu-navigation-trends{
+    display: none;
 }

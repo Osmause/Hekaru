@@ -187,6 +187,23 @@ button {
     display: flex;
 }
 
+.gap-5{
+    gap: 5%;
+}
+
+.ai-center {
+    align-items: center;
+}
+.jc-center{
+    justify-content: center;
+}
+.ji-center{
+    justify-items: center;
+}
+.no-gap {
+    gap: 0;
+}
+
 .flex-1 {
     flex: 1;
 }
@@ -196,20 +213,65 @@ button {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
+    gap: 6.25em;
     align-items: center;
+
 }
 
+.hide {
+    display: none;
+}
+.hidden {
+    opacity: 0;
+}
 .img-fluid {
     /* adapt image from the container */
     max-width: 100%;
     height: auto;
 }
 
-.hidden {
-    width: 0;
-    transition: 400ms ease-in-out;
+.show {
+    display: block;
 }
 
+.animation {
+    transition: 300ms ease-in-out;
+}
+
+.gap-anim{
+    transition: gap 1500ms ease-in-out;
+}
+.no-width {
+    width: 0;
+}
+/*Z-INDEX */
+.z-index-0{
+    z-index: 0;
+}
+.z-index-1{
+    z-index: 1;
+}
+.z-index-2{
+    z-index: 2;
+}
+.z-index-3{
+    z-index: 3;
+}
+.z-index-4{
+    z-index: 4;
+}
+.z-index-5{
+    z-index: 5;
+}
+.z-index-6{
+    z-index: 6;
+}
+.z-index-7{
+    z-index: 7;
+}
+.z-index-999{
+    z-index: 999;
+}
 /*RESPONSIVE*/
 
 .text-h1-media {
