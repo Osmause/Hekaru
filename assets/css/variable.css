@@ -118,6 +118,10 @@ button {
     color: var(--disErr);
 }
 
+.text-no-color {
+    color: transparent;
+}
+
 .bg-color-softLight {
     background-color: var(--softLight);
 }
@@ -185,38 +189,76 @@ button {
 }
 
 /* FEATURE */
+.block{
+    display: block;
+}
 .flex {
     display: flex;
 }
 
-.grid{
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.grid {
     display: grid;
 }
 
-.gap-5{
+.gap-5 {
     gap: 0.3125em;
 }
 
-.column-gap-5{
-    grid-gap: 5%;
+.gap-10 {
+    gap: 0.625em;
+}
+
+.gap-15 {
+    gap: 0.9375em;
+}
+
+.gap-30 {
+    gap: 1.875em;
+}
+
+.gap-50 {
+    gap: 3.125em;
+}
+
+.column-gap-5 {
+    grid-gap: 0.3125em;
 }
 
 .ai-center {
     align-items: center;
+
 }
-.jc-center{
+
+.as-center {
+    align-self: center;
+}
+
+.ac-center {
+    align-content: center;
+}
+
+.jc-center {
     justify-content: center;
 }
-.ji-center{
+
+.ji-center {
     justify-items: center;
 }
 
-.column{
+.column {
     flex-direction: column;
 }
 
 .no-gap {
     gap: 0;
+}
+
+.ta-center{
+    text-align: center;
 }
 
 .flex-1 {
@@ -233,12 +275,20 @@ button {
 
 }
 
+.grid-template-columns-300 {
+
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+}
+
 .hide {
     display: none;
 }
+
 .hidden {
     opacity: 0;
 }
+
 .img-fluid {
     /* adapt image from the container */
     max-width: 100%;
@@ -253,49 +303,64 @@ button {
     transition: 300ms ease-in-out;
 }
 
-.gap-anim{
+.gap-anim {
     transition: gap 1500ms ease-in-out;
 }
-.width-100{
+
+.width-100 {
     width: 100%;
 }
+
 .no-width {
     width: 0;
 }
-.separator{
+
+
+
+.separator {
     width: 100%;
     padding: 0.1%;
     border-radius: 10px;
     background-color: var(--grayDark)
 }
+
 /*Z-INDEX */
-.z-index-0{
+.z-index-0 {
     z-index: 0;
 }
-.z-index-1{
+
+.z-index-1 {
     z-index: 1;
 }
-.z-index-2{
+
+.z-index-2 {
     z-index: 2;
 }
-.z-index-3{
+
+.z-index-3 {
     z-index: 3;
 }
-.z-index-4{
+
+.z-index-4 {
     z-index: 4;
 }
-.z-index-5{
+
+.z-index-5 {
     z-index: 5;
 }
-.z-index-6{
+
+.z-index-6 {
     z-index: 6;
 }
-.z-index-7{
+
+.z-index-7 {
     z-index: 7;
 }
-.z-index-999{
+
+.z-index-999 {
     z-index: 999;
 }
+
 /*RESPONSIVE*/
 
 .text-h1-media {
@@ -312,6 +377,11 @@ button {
 .text-h3-media {
     font-size: var(--h3-phone-size);
     font-family: 'roboto';
+}
+
+.icon-feature {
+    width: 18px;
+    height: 18px;
 }
 
 @media only screen and (min-width: 50em) {

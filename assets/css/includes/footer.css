@@ -1,4 +1,8 @@
 .iconHekaru{
     display: block;
-    width: 100px;
+    width: 90px;
+}
+
+.network a {
+    color: transparent;
 }
