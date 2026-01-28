@@ -172,6 +172,10 @@ button {
     padding: 5%;
 }
 
+.padding-5-15{
+    padding: 5% 15%;
+}
+
 
 /*RADIUS COMPONENT*/
 
@@ -233,6 +237,10 @@ button {
 
 }
 
+.ai-start{
+    align-items: start;
+}
+
 .as-center {
     align-self: center;
 }
@@ -243,6 +251,10 @@ button {
 
 .jc-center {
     justify-content: center;
+}
+
+.jc-space-beetween{
+    justify-content: space-between;
 }
 
 .ji-center {
@@ -319,9 +331,9 @@ button {
 
 .separator {
     width: 100%;
-    padding: 0.1%;
+    padding: 0.1px;
     border-radius: 10px;
-    background-color: var(--grayDark)
+    background-color: var(--grayDark);
 }
 
 /*Z-INDEX */
@@ -380,8 +392,8 @@ button {
 }
 
 .icon-feature {
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
 }
 
 @media only screen and (min-width: 50em) {

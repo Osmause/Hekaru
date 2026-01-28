@@ -2,7 +2,13 @@
     display: block;
     width: 90px;
 }
-
+.network{
+     width: fit-content;
+}
 .network a {
     color: transparent;
+}
+
+.nav-footer{
+    grid-template-columns: 400px;
 }
