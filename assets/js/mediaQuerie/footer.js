@@ -1,11 +1,11 @@
-export function initFooter() {
+export function mediaFooter() {
   //media querie list ------------------------------
-  let mobile = window.matchMedia("(max-width:767px)");
-  let tablet = window.matchMedia("(min-width:768px) and (max-width:1023px)");
-  let desktop = window.matchMedia("(min-width: 1024px)");
+  let mobile = window.matchMedia("(max-width:47.9375em)");
+  let tablet = window.matchMedia("(min-width:48em) and (max-width:63.9375em)");
+  let desktop = window.matchMedia("(min-width: 64em)");
   //--------------------------------------
   //Select div ---------------------------
-  let container = document.querySelector(".footer-container")
+  let container = document.querySelector(".footer-container");
   let wrapped = document.querySelector(".footer-wrapped");
   let wrap = document.querySelector(".footer-wrap");
   let content = document.querySelector(".nav-footer");
@@ -13,8 +13,8 @@ export function initFooter() {
   function changeMedia() {
     // PC
     if (desktop.matches) {
-      container.classList.add("padding-5-15")
-       container.classList.remove("padding-5")
+      container.classList.add("padding-5-15");
+      container.classList.remove("padding-5");
       wrapped.classList.remove("column");
       wrapped.classList.remove("ai-center");
       wrap.classList.remove("column");
@@ -24,8 +24,8 @@ export function initFooter() {
       content.classList.add("flex-wrap");
     } else if (tablet.matches) {
       // tablet
-      container.classList.remove("padding-5-15")
-      container.classList.add("padding-5")
+      container.classList.remove("padding-5-15");
+      container.classList.add("padding-5");
       wrapped.classList.remove("column");
       wrapped.classList.add("ai-center");
       wrap.classList.remove("column");

@@ -176,7 +176,6 @@ button {
     padding: 5% 15%;
 }
 
-
 /*RADIUS COMPONENT*/
 
 .radius-component {
@@ -257,6 +256,10 @@ button {
     justify-content: space-between;
 }
 
+.jc-end{
+    justify-content: end;
+}
+
 .ji-center {
     justify-items: center;
 }
@@ -282,9 +285,8 @@ button {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
-    gap: 6.25em;
+    gap: 2em;
     align-items: center;
-
 }
 
 .grid-template-columns-300 {
@@ -301,11 +303,12 @@ button {
     opacity: 0;
 }
 
-.img-fluid {
+.img-fluid-max {
     /* adapt image from the container */
     max-width: 100%;
     height: auto;
 }
+
 
 .show {
     display: block;
@@ -326,8 +329,6 @@ button {
 .no-width {
     width: 0;
 }
-
-
 
 .separator {
     width: 100%;

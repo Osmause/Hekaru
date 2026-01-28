@@ -1,8 +1,10 @@
 //Import our function
 import { initHeader } from "./includes/header.js";
-import { initFooter } from "./includes/footer.js"
+import { mediaHeader } from "./mediaQuerie/header.js"
+import { mediaFooter } from "./mediaQuerie/footer.js"
 
 document.addEventListener("DOMContentLoaded", () => {
     initHeader();
-    initFooter();
+    mediaFooter();
+    mediaHeader();
 });

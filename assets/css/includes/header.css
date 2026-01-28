@@ -67,14 +67,36 @@
     gap: 1%;
 }
 
-
-
 .shop-cart,
 .menu-burger {
     width: 24px;
     height: 24px;
 }
 
-.menu-navigation-trends{
+.menu-navigation-trends {
     display: none;
+}
+
+.box-size-header {
+    min-width: 110px;
+    height: auto;
+} 
+
+
+/* .nav-menu-trends{
+    display: none;
+} */
+
+/* .nav-menu-user-desktop{
+    display: none;
+} */
+
+
+@media only screen and (min-width:62.5em) {
+    
+
+
+    /* .nav-plateform-mobile{
+        display: none;
+    } */
 }
