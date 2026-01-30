@@ -47,6 +47,7 @@
     --h1-pc-size: 1.375rem;
     --h2-pc-size: 1.125rem;
     --h3-pc-size: 0.875rem;
+    --isMobile: flex;
 }
 
 body {
@@ -122,6 +123,12 @@ button {
     color: transparent;
 }
 
+footer svg:hover path{
+    fill: var(--softCyan);
+    transition: 300ms ease-in-out;
+}
+
+
 .bg-color-softLight {
     background-color: var(--softLight);
 }
@@ -146,7 +153,7 @@ button {
     background: var(--skyblue);
 }
 
-.bg-color-flowerpurple {
+.bg-color-flowerPurple {
     background: var(--flowerPurple);
 }
 
@@ -156,6 +163,17 @@ button {
 
 .bg-color-sunset {
     background: var(--sunset);
+}
+.bg-transparent{
+    background-color: transparent;
+}
+
+.bg-transparent-search{
+    background-color: rgb(var(--abyssal-black-rgb) / 0.1);
+}
+
+.bg-blur{
+   backdrop-filter: blur(80px) saturate(100%);
 }
 
 .icon-svg-fill-softLight {
@@ -174,6 +192,10 @@ button {
 
 .padding-5-15{
     padding: 5% 15%;
+}
+
+.padding-left-5{
+    padding-left: 5%;
 }
 
 /*RADIUS COMPONENT*/
@@ -290,9 +312,7 @@ button {
 }
 
 .grid-template-columns-300 {
-
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-
 }
 
 .hide {

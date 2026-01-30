@@ -10,7 +10,6 @@
     permet d'éviter les espaces fantômes 
     display: block;
 } */
-
 .search-wrapper {
     position: relative;
     overflow: hidden;
@@ -80,7 +79,7 @@
 .box-size-header {
     min-width: 110px;
     height: auto;
-} 
+}
 
 
 /* .nav-menu-trends{
@@ -91,12 +90,12 @@
     display: none;
 } */
 
-
-@media only screen and (min-width:62.5em) {
     
+@media only screen and (min-width:1000px) {
+    
+    .search-wrapper {
+        width: 60px;
+        height: 60px;
+    }
 
-
-    /* .nav-plateform-mobile{
-        display: none;
-    } */
 }
