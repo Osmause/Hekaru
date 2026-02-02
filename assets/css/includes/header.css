@@ -1,3 +1,5 @@
+@import url(/assets/css/variable.css);
+
 /* .logo-navigation {
     display: block;
     même largeur que l'image 
@@ -77,25 +79,39 @@
 }
 
 .box-size-header {
-    min-width: 110px;
+    min-width: 170px;
     height: auto;
 }
 
-
-/* .nav-menu-trends{
-    display: none;
-} */
-
-/* .nav-menu-user-desktop{
-    display: none;
-} */
-
     
+@media only screen and (min-width:430px){
+    .nav-menu-user-desktop {
+        display: none;
+    }
+}
+
 @media only screen and (min-width:1000px) {
     
+     div.header-state{
+        background-color: transparent;
+    }
+
+    .nav-menu-user-desktop{
+        display: block;
+    }
+
+
+    div.isMobile, .isMobile{
+        display: none;
+    }
+
     .search-wrapper {
         width: 60px;
         height: 60px;
+    }
+
+    .box-size-header{
+        width: 160px;
     }
 
 }

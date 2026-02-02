@@ -1,14 +1,53 @@
-.iconHekaru{
+@import url(/assets/css/variable.css);
+
+.iconHekaru {
     display: block;
     width: 90px;
 }
-.network{
-     width: fit-content;
+
+.network {
+    width: fit-content;
 }
+
 .network a {
     color: transparent;
 }
 
-.nav-footer{
+.nav-footer {
     grid-template-columns: 400px;
+}
+
+
+/* RESPONSIVE */
+
+
+
+@media only screen and (min-width:768px){
+    .footer-wrapped, .footer-wrap{
+        align-items: center;
+    }
+    .footer-wrapped.column {
+        flex-direction: row;
+    }
+
+    .footer-wrap.column {
+        flex-direction: row;
+    }
+
+    .nav-footer.column {
+        flex-direction: row;
+    }
+
+    .nav-footer {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (min-width:1025px) {
+    .footer-container.padding-5{
+        padding: 5% 15%;
+    }
+    
+
 }
