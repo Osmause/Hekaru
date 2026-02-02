@@ -1,0 +1,28 @@
+@import url(/assets/css/variable.css);
+
+
+html,
+body {
+    height: 100%;
+}
+
+main {
+    height: 100%;
+}
+
+
+.or {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.sptor {
+    width: 100%;
+    padding: 0.1px;
+    border-radius: 10px;
+}
+
+@media only screen and (min-width:740px){
+    
+}
