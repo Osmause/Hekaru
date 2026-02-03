@@ -15,7 +15,7 @@ main {
     display: flex;
     align-items: center;
     width: 100%;
-}
+}   
 
 .sptor {
     width: 100%;
@@ -23,6 +23,29 @@ main {
     border-radius: 10px;
 }
 
-@media only screen and (min-width:740px){
+main.flex{
+    display: block;
+}
+
+.img-side{
+    background-image: url(/assets/img/jpg/cyberpunk-2077.jpg);
+    object-fit: cover;
+    height: 100%;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+}
+
+@media only screen and (min-width:900px){
+    main.flex{
+        display: flex;
+    }
+
+    .img-container{
+       display: block;
+    }
     
+    .container.padding-0-5{
+        padding: 0% 15%;
+    }
+
 }

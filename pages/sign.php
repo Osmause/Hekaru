@@ -9,19 +9,19 @@
 </head>
 
 <body class="bg-color-abyssalBlack">
-    <main>
-        <article class="flex column jc-center    height-100 logs">
+    <main class="flex">
+        <article class="flex column jc-center width-100 height-100 logs">
             <div class="container flex column gap-15 padding-0-5">
                 <span class="text-color-softLight text-h1-media as-center">Créer un compte</span>
                 <button
-                    class="bg-color-softLight text-h2-media text-color-abyssalBlack radius-component-rounded padding-3-15">S'inscrire
+                    class="pointer bg-color-softLight text-h2-media text-color-abyssalBlack radius-component-rounded padding-3-15">S'inscrire
                     avec Hekaru</button>
                 <div class="or gap-5">
                     <div class="sptor bg-color-whiteGray"></div>
                     <span class="text-h2-media text-color-softLight">OU</span>
                     <div class="sptor bg-color-whiteGray"></div>
                 </div>
-                <button class="flex ai-center jc-center radius-component-rounded-color gap-5 padding-3-15"><svg
+                <button class="pointer flex ai-center jc-center radius-component-rounded-color gap-5 padding-3-15"><svg
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <g fill="none" fill-rule="evenodd">
                             <path
@@ -31,12 +31,15 @@
                         </g>
                     </svg><span class="text-h2-media text-color-softLight">S'inscrire avec Steam</span></button>
                     <div class="flex jc-space-beetween ">
-                        <a class="text-color-whiteGray text-h2-media" href="../index.php">Revenir à l'accueil</a>
-                        <span class="text-color-softCyan text-h2-media text-underline">Vous avez déjà un compte ?</span>
+                        <a class="pointer text-color-whiteGray text-h2-media" href="../index.php">Revenir à l'accueil</a>
+                        <span class="pointer text-color-softCyan text-h2-media text-underline">Vous avez déjà un compte ?</span>
                     </div>
             </div>
         </article>
+        <div class="width-100 hide img-container"> 
+            <div class="img-side width-100 animation"></div>
+        </div>
     </main>
 </body>
-
+<script type="module" src="/assets/js/main.js"></script>
 </html>
