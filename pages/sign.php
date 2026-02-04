@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Sign</title>
     <link rel="stylesheet" href="/assets/css/pages/sign.css">
 </head>
 
@@ -32,9 +32,8 @@
                     </svg><span class="text-h2-media text-color-softLight">S'inscrire avec Steam</span></button>
                     <div class="flex jc-space-beetween ">
                         <a class="pointer text-color-whiteGray text-h2-media" href="../index.php">Revenir à l'accueil</a>
-                        <span class="pointer text-color-softCyan text-h2-media text-underline">Vous avez déjà un compte ?</span>
+                        <a href="../pages/signin.php" class="pointer as-center text-color-softCyan text-h2-media text-underline">Vous avez déjà un compte ?</a>                    </div>
                     </div>
-            </div>
         </article>
         <div class="width-100 hide img-container"> 
             <div class="img-side width-100 animation"></div>

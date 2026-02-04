@@ -1,20 +1,29 @@
-    export function initSide(){
-        let images = 
-        [   'url("../assets/img/jpg/gtavi.jpg")',          
-            'url("../assets/img/jpeg/thumb-1920-1322922.jpeg")',
-            'url("../assets/img/jpg/cyberpunk-2077.jpg")'
-        ];
+export function initSide() {
+    let imgSide = document.querySelector(".img-side");
+    if (!imgSide) return;
+    
+    let currentImageIndex = null;
+    let rdm = null;
 
+    let images = [
+        '../assets/img/jpg/gtavi.jpg',
+        '../assets/img/jpeg/thumb-1920-1322922.jpeg',
+        '../assets/img/jpg/cyberpunk-2077.jpg',
+        
+    ];
 
-        let sideIMG = document.querySelector('.img-side');
-
-        function showImage(){
-            let rdm = Math.floor(Math.random() * images.length)
-            let img = images[rdm];  
-            sideIMG.style.backgroundImage = img;
-            
-            console.log(images);
-            
+    function showImage() {
+        while (rdm === currentImageIndex) {
+            rdm = Math.floor(Math.random() * images.length);
         }
-        setInterval(showImage, 5000)
+        
+        currentImageIndex = rdm;
+        imgSide.style.backgroundImage = `url(${images[currentImageIndex]})`;
     }
+
+    // Immediate change
+    showImage();
+
+    // Change every 8 secs
+    setInterval(showImage, 8000);
+}

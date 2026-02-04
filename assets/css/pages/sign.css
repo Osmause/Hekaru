@@ -27,8 +27,12 @@ main.flex{
     display: block;
 }
 
+.padding-custom{
+    padding: 2% 3%;
+}
+
 .img-side{
-    background-image: url(/assets/img/jpg/cyberpunk-2077.jpg);
+    /* background-image: url(/assets/img/jpg/cyberpunk-2077.jpg); */
     object-fit: cover;
     height: 100%;
     /* background-size: cover; */
