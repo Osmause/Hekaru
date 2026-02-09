@@ -79,12 +79,12 @@
 }
 
 .box-size-header {
-    min-width: 170px;
+    min-width: 100px;
     height: auto;
 }
 
     
-@media only screen and (min-width:430px){
+@media only screen and (min-width:350px){
     .nav-menu-user-desktop {
         display: none;
     }
@@ -92,9 +92,9 @@
 
 @media only screen and (min-width:1000px) {
     
-     div.header-state{
+     /* div.header-state{
         background-color: transparent;
-    }
+    } */
 
     .nav-menu-user-desktop{
         display: block;
@@ -112,6 +112,14 @@
 
     .box-size-header{
         width: 160px;
+    }
+
+    .nav-menu-user.padding-5{
+        padding: 2%;
+    }
+
+    .nav-menu-trends.hide{
+        display: block;
     }
 
 }

@@ -1,6 +1,4 @@
 @import url(/assets/css/variable.css);
-@import url(/assets/css/includes/header.css);
-@import url(/assets/css/includes/footer.css);
 
 body {
   background: var(--abyssalNight);
