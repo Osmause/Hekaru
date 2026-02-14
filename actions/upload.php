@@ -4,6 +4,10 @@ $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 
 $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+echo $imageFileType . PHP_EOL;
+echo $target_file;
+var_dump($_FILES["fileToUpload"]);
+die;
 
 if (isset($_POST["submit"])) {
     $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
@@ -27,12 +31,12 @@ if ($_FILES["fileToUpload"]["size"] > 2320000) {
 }
 
 if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType = "jpeg" && $imageFileType = "gif") {
-    echo "Sorry, only JPG, JPEG, PNG & gif  files are allowed";
+    echo "Sorry, only JPG, JPEG, PNG & gif  files are allowed ";
     $uploadOk = 0;
 }
 
 if ($uploadOk == 0) {
-    echo "Sorry, your file was not uploaded";
+    echo "Sorry, your file was not uploaded ";
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         echo "The file" . htmlspecialchars(basename($_FILES["fileToUpload"]["name"])) . " has been uploaded";
@@ -52,7 +56,7 @@ if ($uploadOk == 0) {
     <link rel="stylesheet" href="/assets/css/pages/loading.css">
 </head>
 
-<body class="">
+<body class="text-color-softLight">
 
 </body>
 
