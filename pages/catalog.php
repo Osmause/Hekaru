@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le catalogue</title>
+    <title>Le catalogue</title> 
     <link rel="stylesheet" href="/assets/css/pages/catalog.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
 </head>
 
-<body class="bg-color-abyssalBlack">
+<body>
     <?php include('../includes/header.html'); ?>
-    <main class="flex column">
+    <main class="flex column gap-15">
         <section class="firstPresentation">
             <div class="backgroundOpacity bg-transparent-color width-100 height-100"></div>
             <figure class="video-wrapper width-100 height-100">
-                <video class="videoMedia width-100 height-100 blur" disablePictureInPicture data-state="play" autoplay muted loop>
+                <video class="videoMedia width-100 height-100 blur" disablePictureInPicture data-state="play" autoplay
+                    muted loop>
                     <source class="sourceMedia" type="video/mp4" data-src="../assets/vids"
                         src="../assets/vids/Ratchet-&-Clank-Rift-Apart-Announcement-Trailer-PS5.mp4">
                 </video>
@@ -44,11 +45,16 @@
                     <div class="menuFeature padding-5">
                         <div class="buttonState flex jc-center padding-5 pointer">
                             <button class="stateVid pointer">
-                                <svg class="icon-min-pause pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <svg class="icon-min-pause pointer" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24">
                                     <path class="icon-svg-fill-softLight"
                                         d="M16 19q-.825 0-1.412-.587T14 17V7q0-.825.588-1.412T16 5t1.413.588T18 7v10q0 .825-.587 1.413T16 19m-8 0q-.825 0-1.412-.587T6 17V7q0-.825.588-1.412T8 5t1.413.588T10 7v10q0 .825-.587 1.413T8 19" />
                                 </svg>
-                                <svg class="icon-min-play pointer hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="icon-svg-fill-softLight" d="M21.409 9.353a2.998 2.998 0 0 1 0 5.294L8.597 21.614C6.534 22.737 4 21.277 4 18.968V5.033c0-2.31 2.534-3.769 4.597-2.648z"/></svg>
+                                <svg class="icon-min-play pointer hide" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24">
+                                    <path class="icon-svg-fill-softLight"
+                                        d="M21.409 9.353a2.998 2.998 0 0 1 0 5.294L8.597 21.614C6.534 22.737 4 21.277 4 18.968V5.033c0-2.31 2.534-3.769 4.597-2.648z" />
+                                </svg>
                             </button>
                         </div>
                     </div>
@@ -56,7 +62,7 @@
                 <div class="containerMedia flex column jc-center gap-15">
                     <div class="width-100 flex jc-center">
                         <button class="playIframe pointer">
-                            <svg class="icon-Play"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <svg class="icon-Play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                 <path class="icon-svg-fill-softLight"
                                     d="M2.93 17.07A10 10 0 1 1 17.07 2.93A10 10 0 0 1 2.93 17.07m12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32M7 6l8 4l-8 4z" />
                             </svg>
@@ -76,6 +82,30 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="trend-scroll flex column height-100">
+            <span class="text-color-softLight text-h1-media padding-0-5">Tendances</span>
+            <div class="scroll-side flex column width-100">
+                <div class="sliding width-100">
+                    <?php include('../includes/gameSlide.html'); ?>
+                </div>
+                <!-- <div class="scroll-button flex jc-center width-100">
+                    <ul class="flex jc-center gap-15">
+                        <li class="scrollBtn radius-component bg-color-whiteGray pointer" data-select="selected"></li>
+                        <li class="scrollBtn radius-component bg-color-whiteGray pointer" data-select="selected"></li>
+                        <li class="scrollBtn radius-component bg-color-whiteGray pointer" data-select="selected"></li>
+                        <li class="scrollBtn radius-component bg-color-whiteGray pointer" data-select="selected"></li>
+                        <li class="scrollBtn radius-component bg-color-whiteGray pointer" data-select="selected"></li>
+                        <li class="scrollBtn radius-component bg-color-whiteGray pointer" data-select="selected"></li>
+                        <li class="scrollBtn radius-component bg-color-whiteGray pointer" data-select="selected"></li>
+                        <li class="scrollBtn radius-component bg-color-whiteGray pointer" data-select="selected"></li>
+                        <li class="scrollBtn radius-component bg-color-whiteGray pointer" data-select="selected"></li>
+                        <li class="scrollBtn radius-component bg-color-whiteGray pointer" data-select="selected"></li>
+
+                    </ul>
+                </div> -->
+            </div>
+
         </section>
     </main>
     <?php include('../includes/footer.html'); ?>

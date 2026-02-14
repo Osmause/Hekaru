@@ -13,9 +13,8 @@
         <article class="flex column jc-center width-100 height-100 logs">
             <div class="container flex column gap-15 padding-0-5">
                 <span class="text-color-softLight text-h1-media as-center">Créer un compte</span>
-                <button
-                    class="pointer bg-color-softLight text-h2-media text-color-abyssalBlack radius-component-rounded padding-3-15">S'inscrire
-                    avec Hekaru</button>
+                <a href="signup.php"
+                    class="pointer bg-color-softLight flex jc-center text-h2-media text-color-abyssalBlack radius-component-rounded padding-3-15">S'inscrire avec Hekaru</a>
                 <div class="or gap-5">
                     <div class="sptor bg-color-whiteGray"></div>
                     <span class="text-h2-media text-color-softLight">OU</span>
@@ -32,7 +31,7 @@
                     </svg><span class="text-h2-media text-color-softLight">S'inscrire avec Steam</span></button>
                     <div class="flex jc-space-beetween ">
                         <a class="pointer text-color-whiteGray text-h2-media" href="../index.php">Revenir à l'accueil</a>
-                        <a href="../pages/signin.php" class="pointer as-center text-color-softCyan text-h2-media text-underline">Vous avez déjà un compte ?</a>                    </div>
+                        <a href="../pages/signin.php" class="pointer as-center text-color-softCyan text-h2-media text-underline">Vous avez déjà un compte ?</a></div>
                     </div>
         </article>
         <div class="width-100 hide img-container"> 

@@ -16,10 +16,9 @@ export function initSide() {
         while (rdm === currentImageIndex) {
             rdm = Math.floor(Math.random() * images.length);
         }
-        
         currentImageIndex = rdm;
-        imgSide.style.backgroundImage = `url(${images[currentImageIndex]})`;
-    }
+            imgSide.style.backgroundImage = `url(${images[currentImageIndex]})`;
+        }
 
     // Immediate change
     showImage();

@@ -1,17 +1,6 @@
 @import url(/assets/css/variable.css);
 
-
-html,
-body {
-    height: 100%;
-}
-
-main {
-    height: 100%;
-}
-
-
-.or {
+    .or {
     display: flex;
     align-items: center;
     width: 100%;
@@ -31,13 +20,20 @@ main.flex{
     padding: 2% 3%;
 }
 
-.img-side{
-    /* background-image: url(/assets/img/jpg/cyberpunk-2077.jpg); */
-    object-fit: cover;
-    height: 100%;
-    /* background-size: cover; */
-    background-repeat: no-repeat;
+.img-container{
+    top: 0;
+    left: 0;
 }
+
+.img-side{
+    height: 100vh;
+    background-repeat: no-repeat;
+    object-fit:cover;
+    object-position: center;
+}   
+
+
+
 
 @media only screen and (min-width:900px){
     main.flex{

@@ -1,20 +1,20 @@
 @import url(/assets/css/variable.css);
-
-html, body {
-    height: 100%;
-}
+@import url(/assets/css/includes/gameSlide.css);
 
 /* html { overflow-y: hidden; } remove scrollbar */
 
+
+/* SECTION FIRSTPRESENTATION*/
+
 body {
     background: var(--abyssalNight);
+    background-attachment: fixed; /* No gradient color reapeat */
 }
 
 .firstPresentation {
     height: 80vh;
     position: relative;
 }
-
 
 .backgroundOpacity {
     position: absolute;
@@ -27,7 +27,7 @@ body {
     z-index: 1;
 }
 
-.playIframe{
+.playIframe {
     width: min-content;
 }
 
@@ -83,7 +83,9 @@ a.radius-component-rounded-color {
     width: fit-content;
 }
 
-.icon-ctg, .icon-min-pause, .icon-min-play {
+.icon-ctg,
+.icon-min-pause,
+.icon-min-play {
     width: 24px;
     height: 24px;
 }
@@ -125,8 +127,17 @@ iframe {
 }
 
 
-.close-iframe{
+.close-iframe {
     justify-content: flex-end;
+}
+
+/*TREND SCROLL */
+
+
+
+
+.scrollBtn{
+    padding: 3% 7%;
 }
 
 @media only screen and (min-width: 1000px) {

@@ -55,10 +55,17 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+
+html,
 body {
-    min-height: 100vh;
+    height: 100%;
+}
+
+main {
+    height: 100%;
 }
 
 label {
@@ -219,6 +226,10 @@ button {
 }
 
 /* PADDING */
+
+.padding-1{
+    padding: 1%;
+}
 
 .padding-3-15 {
     padding: 3% 5%;

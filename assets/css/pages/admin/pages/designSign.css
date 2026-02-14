@@ -1,0 +1,7 @@
+@import url(../../../variable.css);
+
+.display{
+    width: 354.79px;
+    height: 545.5px;
+    border: 1px solid var(--abyssalBlack);
+}

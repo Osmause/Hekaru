@@ -47,6 +47,8 @@ export function initPlay() {
   let iconPause = document.querySelector(".icon-min-pause");
   let iconPlay = document.querySelector(".icon-min-play");
 
+  if (!playBg) return;
+
   playBg.addEventListener("click", () => {
     let stateVideo = document.querySelector(".videoMedia");
 
